@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <Header/>
+    <div class="container">
+      <img class="sars" src="./assets/sars.png" alt="sars"/>
+      <Header/>
+    </div>
   </div>
 </template>
 
@@ -22,9 +25,25 @@ margin: 0;
 padding: 0;
 }
 
+body {
+overflow-x: hidden;
+}
+
 html, body {
 height:100%;
 width:100%;
+}
+
+.container{
+max-width: 1200px;
+width: 90%;
+margin: 0 auto;
+position: relative;
+}
+
+.sars {
+position: absolute;
+left:0;
 }
 
 #app {
@@ -36,6 +55,6 @@ width:100%;
   background: #db1637;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
-
+  min-height: 100%;
 }
 </style>

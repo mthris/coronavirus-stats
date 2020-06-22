@@ -16,6 +16,8 @@ export default {
   max-width: 400px;
   margin: 0 auto;
   padding-top: 153px;
+  z-index: 1;
+  position: relative;
   }
 
   .header__title{
